@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 password = "Python is awesome"
 password_input = input("Password: ")
 if password_input != password:
