@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 number = input("Enter a number lees than 25: ")
 number = int(number)
 if number > 25:
