@@ -33,12 +33,6 @@ def is_king_in_check(board_str):
             if 0 <= row < size and 0 <= col < size and board[row][col] == 'P':
                 return "Success"
 
-        # Check for Pawn threats
-        for dr, dc in pawn_attacks:
-            row, col = king_row + dr, king_col + dc
-            if 0 <= row < size and 0 <= col < size and board[row][col] == 'P':
-                return "Success"
-
         # Check for Queen/Bishop
         for dr, dc in diagonals:
             row, col = king_row + dr, king_col + dc
